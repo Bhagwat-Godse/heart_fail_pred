@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chances of Heart Fail</title>
+</head>
+<body>
+    <h1> Chances of Heart Fail </h1>
+
+    <form method="POST" action="/predict">
+        <lable>Age</lable>
+        <input type="float" name="Age">
+        <br>
+        <br>
+
+        <lable>Sex</lable>
+        <input type="float" name="Sex">
+        <br>
+        <br>
+
+        <lable>ChestPainType</lable>
+        <input type="float" name="ChestPainType">
+        <br>
+        <br>
+
+        <lable>Cholesterol</lable>
+        <input type="float" name="Cholesterol">
+        <br>
+        <br>
+
+        <lable>FastingBS</lable>
+        <input type="float" name="FastingBS">
+        <br>
+        <br>
+
+        <lable>MaxHR</lable>
+        <input type="float" name="MaxHR">
+        <br>
+        <br>
+
+        <lable>ExerciseAngina</lable>
+        <input type="float" name="ExerciseAngina">
+        <br>
+        <br>
+
+        <lable>Oldpeak</lable>
+        <input type="float" name="Oldpeak">
+        <br>
+        <br>
+
+        <lable>ST_Slope</lable>
+        <input type="float" name="ST_Slope">
+        <br>
+        <br>
+
+        <input type="submit" value="PREDICT">
+        
+        {% if prediction %}
+    
+        <h3>{{prediction}}</h3>
+        {% endif %}
+    <form>
+</body>
+</html>
